@@ -1,0 +1,191 @@
+/* basic things */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+p {
+  color: #203239;
+}
+
+/* The main container elements  */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container {
+  display: block;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* nav on normal computer */
+.navbar {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #203239;
+  position: sticky;
+  top: 20px;
+}
+/* the three spans for the icon */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #203239;
+}
+/*  main ul*/
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* the li */
+.nav-item {
+  margin-left: 5rem;
+}
+/* the links inside the li */
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #203239;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+/* for the logo */
+
+/*  responsiveness Nav bar*/
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* main thing that takes the whole screen */
+main {
+  display: flex;
+  background-image: url(/img/schadi.jpg);
+  height: 80vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* the two line text  */
+/* .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+} */
+/* .left span {
+  font-size: 5rem;
+} */
+
+/* the image at the right side  */
+
+/* the about section when scrolling down */
+
+.about {
+  background-color: bisque;
+  height: 500px;
+}
+
+/* form on the form page */
+form {
+  display: block;
+}
+label {
+  display: inline-block;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #607d8b;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
