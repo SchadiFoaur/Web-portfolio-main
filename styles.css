@@ -141,13 +141,16 @@ p {
 }
 
 /* main thing that takes the whole screen */
-main {
-  display: flex;
-  background-image: url(/img/schadi.jpg);
+.home {
+  background-color: #eeedde;
   height: 80vh;
-  min-height: 500px;
-  background-size: cover;
-  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.avatar {
+  background-image: url(/img/schadi.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* the two line text  */
@@ -170,6 +173,65 @@ main {
   height: 500px;
 }
 
+/* for the cards in the blog page not responsive */
+.row {
+  margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/* Responsive layout  */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 /* form on the form page */
 form {
   display: block;

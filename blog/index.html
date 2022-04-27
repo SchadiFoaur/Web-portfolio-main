@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+    <title>Blog page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/index.html" class="nav-logo">SF</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact/index.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <main class="container">
+      <!-- <div id="myBtnContainer"> -->
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('new')">New</button>
+        <button class="btn" onclick="filterSelection('old')">Old</button>
+      </div>
+
+      <div class="row">
+        <div class="column new">
+          <article class="content">
+            <img src="#" alt="#" />
+            <h4>Lorem, ipsum.</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+              facilis.
+            </p>
+          </article>
+        </div>
+        <div class="column new">
+          <article class="content">
+            <img src="#" alt="#" />
+            <h4>Lorem, ipsum.</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+              facilis.
+            </p>
+          </article>
+        </div>
+        <div class="column old">
+          <article class="content">
+            <img src="#" alt="#" />
+            <h4>Lorem, ipsum.</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+              facilis.
+            </p>
+          </article>
+        </div>
+        <div class="column old">
+          <article class="content">
+            <img src="#" alt="#" />
+            <h4>Lorem, ipsum.</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+              facilis.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
