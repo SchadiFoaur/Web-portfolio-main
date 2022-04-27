@@ -17,6 +17,16 @@ p {
   color: #203239;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container {
+  display: block;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* The main container elements  */
 @media (min-width: 576px) {
   .container {
@@ -40,23 +50,17 @@ p {
   }
 }
 
-.container {
-  display: block;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+/* --------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* nav on normal computer */
 .navbar {
-  background-color: red;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
+/* for the logo */
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
@@ -98,7 +102,6 @@ p {
 .nav-link:hover {
   color: #482ff7;
 }
-/* for the logo */
 
 /*  responsiveness Nav bar*/
 @media only screen and (max-width: 768px) {
@@ -140,18 +143,33 @@ p {
   }
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /* main thing that takes the whole screen */
 .home {
   background-color: #eeedde;
   height: 80vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
-.avatar {
+#test {
+  background-image: url(/img/schadi-optimized.webp);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 3rem 0 0 0;
+}
+.wraper {
+}
+@media (max-width: 450px) {
+  #test {
+    background-size: cover;
+  }
+}
+/* .avatar {
   background-image: url(/img/schadi.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
 /* the two line text  */
 /* .left {
@@ -168,10 +186,14 @@ p {
 
 /* the about section when scrolling down */
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
 .about {
   background-color: bisque;
   height: 500px;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* for the cards in the blog page not responsive */
 .row {
@@ -216,10 +238,6 @@ p {
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
-}
 /* Responsive layout  */
 @media screen and (max-width: 900px) {
   .column {
@@ -232,6 +250,9 @@ p {
     width: 100%;
   }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
 /* form on the form page */
 form {
   display: block;
@@ -251,3 +272,5 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */

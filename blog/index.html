@@ -8,7 +8,9 @@
     <script src="/script.js" defer></script>
     <title>Blog page</title>
   </head>
-  <body>
+  <body style="background-color: #eeedde">
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
     <nav class="navbar">
       <a href="/index.html" class="nav-logo">SF</a>
       <ul class="nav-menu">
@@ -31,14 +33,22 @@
         <span class="bar"></span>
       </div>
     </nav>
+
+    <!-- ----------------All inside main container-------------------------------------------------------------------------------- -->
+
     <main class="container">
-      <!-- <div id="myBtnContainer"> -->
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
+      <h1>My Blog</h1>
+      <hr />
+      <h2>My Progress</h2>
+      <section>
+        <h3>Navigation</h3>
+        <button class="btn" onclick="filterSelection('all')">Show all</button>
         <button class="btn" onclick="filterSelection('new')">New</button>
         <button class="btn" onclick="filterSelection('old')">Old</button>
-      </div>
+        <hr />
+      </section>
+
+      <!-- -----------------------------Separate btns from content--------------------------------------------------------------- -->
 
       <div class="row">
         <div class="column new">
@@ -61,6 +71,9 @@
             </p>
           </article>
         </div>
+
+        <!-- -------------------------------------------Separate old and new---------------------------------------------------- -->
+
         <div class="column old">
           <article class="content">
             <img src="#" alt="#" />
@@ -83,5 +96,7 @@
         </div>
       </div>
     </main>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
   </body>
 </html>

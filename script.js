@@ -1,3 +1,5 @@
+// for the top nav bar
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -15,6 +17,8 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+// --------------------------------------------------------------------------------------------------------------------------------
 
 // for the blog page for the buttons to switch from new to old to all
 filterSelection("all");
@@ -49,15 +53,4 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
 }
