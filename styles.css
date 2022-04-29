@@ -1,4 +1,3 @@
-/* basic things */
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +12,13 @@ a {
 li {
   list-style-type: none;
 }
-p {
-  color: #203239;
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #e32742;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -54,7 +58,7 @@ p {
 
 /* nav on normal computer */
 .navbar {
-  background-color: #fff;
+  background-color: #19142a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,8 +68,7 @@ p {
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #203239;
-  position: sticky;
+  color: white;
   top: 20px;
 }
 /* the three spans for the icon */
@@ -80,7 +83,7 @@ p {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #203239;
+  background-color: white;
 }
 /*  main ul*/
 .nav-menu {
@@ -96,7 +99,7 @@ p {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #203239;
+  color: white;
 }
 
 .nav-link:hover {
@@ -110,7 +113,7 @@ p {
     left: -100%;
     top: 0rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #121f63;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -147,11 +150,11 @@ p {
 
 /* main thing that takes the whole screen */
 .home {
-  background-color: #eeedde;
-  height: 80vh;
+  background-color: #19142a;
+  height: 100vh;
 }
 #test {
-  background-image: url(/img/schadi-optimized.webp);
+  background-image: url(/img/schadii22222.jpg);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -159,38 +162,60 @@ p {
   padding: 3rem 0 0 0;
 }
 .wraper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.wraper h2 {
+  color: white;
 }
 @media (max-width: 450px) {
   #test {
     background-size: cover;
   }
 }
-/* .avatar {
-  background-image: url(/img/schadi.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
-/* the two line text  */
-/* .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-} */
-/* .left span {
-  font-size: 5rem;
-} */
-
-/* the image at the right side  */
-
-/* the about section when scrolling down */
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* the skills section when scrolling down */
+.card-row {
+  height: 70vh;
+}
+.card {
+  float: left;
+  width: 33.33%;
+}
+.content-card {
+  box-shadow: 3px 3px 5px 6px white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+.card img {
+  width: 50%;
+  border-radius: 2px;
+  height: 50%;
+  object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .card {
+    width: 50%;
+  }
+}
 
-.about {
-  background-color: bisque;
-  height: 500px;
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+.skill {
+  background-color: #110d1d;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+.newest {
+  background-color: #1e1e26;
+  height: 90vh;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -216,8 +241,12 @@ p {
   display: table;
   clear: both;
 }
+.content img {
+  width: 100%;
+}
 
 .content {
+  height: 400px;
   background-color: white;
   padding: 10px;
 }
@@ -255,6 +284,7 @@ p {
 
 /* form on the form page */
 form {
+  width: 50%;
   display: block;
 }
 label {
@@ -265,12 +295,78 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #607d8b;
+  border: 1px solid white;
   border-radius: 15px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
+.form-p {
+  color: white;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+}
+
+footer p {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+.question {
+  padding-bottom: 15px;
+}
+
+.bottom_border {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+.footer-nav li {
+  display: inline;
+}
+.footer-nav li a {
+  color: white;
+  margin: 0 12px;
+}
+
+.social_footer_ul {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+}
+.social_footer_ul li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+}
