@@ -1,13 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 a {
+  color: white;
   text-decoration: none;
+}
+a:hover {
+  color: #d8253b;
 }
 li {
   list-style-type: none;
@@ -17,12 +24,13 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  color: #e32742;
+h5,
+a {
+  font-weight: 400px;
+  color: white;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-
+/* main container css */
 .container {
   display: block;
   width: 100%;
@@ -54,15 +62,16 @@ h5 {
   }
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* nav on normal computer */
+/* Nav Bar */
 .navbar {
+  position: fixed;
+  width: 100%;
   background-color: #19142a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  z-index: 99;
 }
 /* for the logo */
 .nav-logo {
@@ -103,7 +112,10 @@ h5 {
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: #d8253b;
+}
+#download {
+  color: #d8253b;
 }
 
 /*  responsiveness Nav bar*/
@@ -113,12 +125,13 @@ h5 {
     left: -100%;
     top: 0rem;
     flex-direction: column;
-    background-color: #121f63;
+    background-color: #19142a;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 99;
   }
 
   .nav-menu.active {
@@ -132,6 +145,7 @@ h5 {
   .hamburger {
     display: block;
     cursor: pointer;
+    z-index: 100;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -146,180 +160,275 @@ h5 {
   }
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* main thing that takes the whole screen */
+/* for the main  */
 .home {
-  background-color: #19142a;
   height: 100vh;
-}
-#test {
   background-image: url(/img/schadii22222.jpg);
-  background-size: contain;
-  background-position: right;
   background-repeat: no-repeat;
-  height: 100%;
-  padding: 3rem 0 0 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.wraper {
-  height: 100%;
+.home h1 {
+  padding-left: 2rem;
+}
+/* extra large screens */
+/* @media (max-width: 1200px) {
+  .home {
+    background-position: -200px;
+  }
+} */
+/* large screens */
+/* @media (max-width: 992px) {
+  .home {
+    background-color: white;
+    background-image: url(/img/schadiiiii.png);
+  }
+} */
+/* @media (min-width: 768px) {
+  .home {
+  }
+}
+@media (min-width: 576px) {
+  .home {
+  }
+} */
+.home h1 {
+  font-size: 2rem;
+}
+.home span {
+  color: #d8253b;
+  font-size: 3rem;
+}
+/* style main ends */
+/* for the about / skills */
+.about {
+  padding: 25px;
+  background-color: #2a2345;
+  display: flex;
+}
+.about h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.left {
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 }
-.wraper h2 {
+
+.box {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d8253b;
+  padding: 2rem;
+  width: 12rem;
+  height: 100px;
+  border-radius: 0px 20px 0px 20px;
+  background: #19142a;
+  position: relative;
+  box-shadow: none;
+  transition: transform 300ms ease-in-out, box-shadow 400ms ease,
+    background 100ms ease;
+}
+.box:hover,
+.box:focus-within {
   color: white;
-}
-@media (max-width: 450px) {
-  #test {
-    background-size: cover;
-  }
+  background: #d8253b;
+  box-shadow: 0 1rem 1rem white;
+  transform: translateY(-0.5rem);
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-/* the skills section when scrolling down */
-.card-row {
-  height: 70vh;
+.box h3 {
+  font-size: 2rem;
 }
-.card {
-  float: left;
-  width: 33.33%;
-}
-.content-card {
-  box-shadow: 3px 3px 5px 6px white;
-  border-radius: 5px;
-  padding: 10px;
+
+/* .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  width: 35.3%;
+  height: 100px;
+  border: 2px solid red;
+} */
+
+.right {
   margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.card img {
-  width: 50%;
-  border-radius: 2px;
-  height: 50%;
-  object-fit: cover;
+.right p {
+  margin-top: 10px;
 }
-@media screen and (max-width: 900px) {
-  .card {
-    width: 50%;
-  }
+/* for the progress section  */
+.progress {
+  background-color: #19142a;
+  padding: 25px;
 }
-
-@media screen and (max-width: 600px) {
-  .card {
-    width: 100%;
-  }
-}
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-.skill {
-  background-color: #110d1d;
-}
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-.newest {
-  background-color: #1e1e26;
-  height: 90vh;
+.progress h2,
+p {
+  margin: 10px 0;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* for the cards in the progress sections */
 
-/* for the cards in the blog page not responsive */
-.row {
-  margin: 10px -16px;
+.card-links {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.row,
-.row > .column {
-  padding: 8px;
+.box-card {
+  color: #d8253b;
+  padding: 2rem;
+  width: 20rem;
+  height: 250px;
+  background: #2a2345;
+  border-radius: 0px 20px 0px 20px;
+  position: relative;
+  box-shadow: none;
+  transition: transform 300ms ease-in-out, box-shadow 400ms ease,
+    background 100ms ease;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  display: none;
+.box-card > * + * {
+  margin-top: 1em;
+}
+.box-card:hover,
+.box-card:focus-within {
+  color: white;
+  background: #d8253b;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0 1rem 1rem white;
+  transform: translateY(-0.5rem);
+}
+/* for the button on the card */
+.breakout-button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  background: transparent;
+  color: currentcolor;
+  border: 1px solid;
+  transition: background 100ms ease;
+  position: static;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.content img {
-  width: 100%;
-}
-
-.content {
-  height: 400px;
-  background-color: white;
-  padding: 10px;
-}
-
-.show {
-  display: block;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
+.breakout-button,
+.breakout-button::before {
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #ddd;
+.breakout-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* Responsive layout  */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
+.breakout-button:focus {
+  outline: none;
+}
+
+.breakout-button:hover {
+  background: #2a2345;
+}
+
+/* for the blog page  */
+.box-card-blog {
+  color: #d8253b;
+  padding: 2rem;
+  width: 20rem;
+  height: 400px;
+  background: #2a2345;
+  border-radius: 0px 20px 0px 20px;
+  position: relative;
+  box-shadow: none;
+  transition: transform 300ms ease-in-out, box-shadow 400ms ease,
+    background 100ms ease;
+}
+.box-card-blog:hover,
+.box-card-blog:focus-within {
+  color: white;
+  background: #d8253b;
+  box-shadow: 0 1rem 1rem white;
+  transform: translateY(-0.5rem);
+}
+
+.box-card-blog > * + * {
+  margin-top: 1em;
+}
+.more-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* for both the blog page and home page */
+.breakout-button:focus::before {
+  outline: 1px solid #ffffff;
+  outline-offset: -0.8rem;
+}
+@media (max-width: 1200px) {
+  .card-links {
+    flex-direction: column;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
+  .box-card {
+    margin: 25px 0;
+    width: 100%;
+  }
+  .box-card-blog {
+    margin: 25px 0;
     width: 100%;
   }
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
-
-/* form on the form page */
-form {
-  width: 50%;
-  display: block;
-}
-label {
-  display: inline-block;
-}
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 15px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-.form-p {
-  color: white;
+/* for the entries in the blog section*/
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* for the footer */
 
 footer {
+  padding: 25px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.74);
+  background-color: #2a2345;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
-
+footer h2 {
+  margin: 16px 0;
+}
 footer p {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
-  padding-bottom: 0px;
-  margin-bottom: 8px;
+  padding-bottom: 10px;
+  margin: 8px 0;
 }
 .question {
   padding-bottom: 15px;
@@ -333,7 +442,53 @@ footer p {
 .contact {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
 }
+
+form {
+  width: 55%;
+  display: block;
+}
+label {
+  display: inline-block;
+}
+input[type="text"],
+select,
+textarea {
+  background-color: beige;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #19142a;
+  border-radius: 0px 20px 0px 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #19142a;
+  color: white;
+  padding: 12px 20px;
+  border: thin;
+  border-radius: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #d8253b;
+}
+.form-p {
+  color: white;
+}
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+}
+
 .footer-nav {
   list-style-type: none;
   padding: 0px;
@@ -347,7 +502,6 @@ footer p {
   display: inline;
 }
 .footer-nav li a {
-  color: white;
   margin: 0 12px;
 }
 
@@ -361,12 +515,7 @@ footer p {
   padding-top: 10px;
   float: left;
 }
-
-@media (max-width: 800px) {
-  .contact {
-    flex-direction: column;
-  }
-  form {
-    width: 100%;
-  }
+.icon {
+  font-size: 27px;
+  color: white;
 }

@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+    <title>Web-project</title>
   </head>
   <body>
-    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-
+    <!-- nav bar -->
     <nav class="navbar">
-      <a href="/index.html" class="nav-logo">SF</a>
+      <a href="#" class="nav-logo">SF</a>
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="#" class="nav-link">Download CV</a>
+          <a
+            href="/cv/CV_SchadiFaour (1).pdf"
+            class="nav-link"
+            id="download"
+            target="_blank"
+            >Download CV</a
+          >
         </li>
         <li class="nav-item">
           <a href="/blog/index.html" class="nav-link">Blog</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#about" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="/contact/index.html" class="nav-link">Contact</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
       <div class="hamburger">
@@ -34,128 +39,222 @@
       </div>
     </nav>
 
-    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- main part section -->
+    <section class="home" id="home">
+      <h1>
+        Hello! I am <br />
+        <span>Schadi Faour!</span> <br />
+        And I am an aspiring! <span>Developer</span>
+      </h1>
+    </section>
 
-    <div class="home">
-      <div class="container" id="test">
-        <div class="wraper container">
-          <h2>Schadi Faour!!</h2>
-          <p>An aspiring developer.</p>
+    <!-- the skills section  -->
+    <main class="about" id="about">
+      <div class="container">
+        <h2>My Skills</h2>
+        <hr />
+        <div class="left">
+          <article class="box">
+            <h3>HTML <br /></h3>
+            <p style="font-size: 15px">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </p>
+          </article>
+          <article class="box">
+            <h3>css <br /></h3>
+            <p style="font-size: 15px">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </p>
+          </article>
+          <article class="box">
+            <h3>JavaScript</h3>
+            <p style="font-size: 15px">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </p>
+          </article>
         </div>
       </div>
-    </div>
-
-    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
-    <!-- <main class="card-row container">
-      <h2>My technical skills</h2>
-      <section class="card">
-        <img src="" alt="Html official logo" />
-        <h3>HTML</h3>
-      </section>
-    </main> -->
-    <main class="skill">
-      <section class="card-row container">
-        <h2>My Technical skills</h2>
-        <div class="card">
-          <article class="content-card">
-            <img src="" alt="#" />
-            <h4>Lorem, ipsum.</h4>
-            <hr />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-              facilis.
-            </p>
-            <hr />
-            <a href="#">More</a>
-          </article>
-        </div>
-
-        <div class="card">
-          <article class="content-card">
-            <img src="" alt="#" />
-            <h4>Lorem, ipsum.</h4>
-            <hr />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-              facilis.
-            </p>
-            <hr />
-            <a href="#">More</a>
-          </article>
-        </div>
-
-        <div class="card">
-          <article class="content-card">
-            <img src="" alt="#" />
-            <h4>Lorem, ipsum.</h4>
-            <hr />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-              facilis.
-            </p>
-            <hr />
-            <a href="#">More</a>
-          </article>
-        </div>
-      </section>
+      <div class="container">
+        <h2>About Me</h2>
+        <hr />
+        <article class="right">
+          <h3>Small Summery</h3>
+          <p>
+            I am a junior developer based in Zurich. A highly motivated self
+            learner, hard worker and holder of various social, communication and
+            business skills coupled with good computer skills. My time at the
+            coding academy Powercoders taught allowed me to fully develop my IT
+            skills and train some of my soft skills.
+          </p>
+        </article>
+      </div>
     </main>
-    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-    <div class="newest card-row">
-      <section class="container">
-        <h2>Newest</h2>
-        <div class="card">
-          <article class="content-card">
-            <img src="" alt="#" />
-            <h4>Lorem, ipsum.</h4>
-            <hr />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-              facilis.
-            </p>
-            <hr />
-            <a href="#">More</a>
-          </article>
-        </div>
 
-        <div class="card">
-          <article class="content-card">
-            <img src="" alt="#" />
-            <h4>Lorem, ipsum.</h4>
-            <hr />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
-              facilis.
-            </p>
-            <hr />
-            <a href="#">More</a>
-          </article>
-        </div>
-      </section>
+    <div class="progress">
+      <article class="container">
+        <h2>My Progress</h2>
+
+        <p>
+          It has never been easy during my journey in discovering the world of
+          IT. Although a wide variety of resources are available online for
+          free, it is not easy doing everything on your own. That is why I am
+          lucky to be part of Powercoders and get access to a mentors that are
+          always helping me throughout my learning proses. Check out my
+          progress!
+        </p>
+        <hr />
+      </article>
+
+      <!-- first row of of cards-->
+
+      <div class="card-links container" style="margin-bottom: 16px">
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ea, deleniti beatae commodi rem non officiis distinctio corporis
+            optio atque.
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = 'https:#';"
+          >
+            More
+          </button>
+        </article>
+
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+            consequatur?
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = 'https:#';"
+          >
+            More
+          </button>
+        </article>
+
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+            consequatur?
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = './blog/index.html';"
+          >
+            More
+          </button>
+        </article>
+      </div>
+      <!-- first raw cards end -->
+      <!-- second raw card start -->
+
+      <div class="card-links container" style="margin-top: 0">
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ea, deleniti beatae commodi rem non officiis distinctio corporis
+            optio atque.
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = 'https:#';"
+          >
+            More
+          </button>
+        </article>
+
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+            consequatur?
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = 'https:#';"
+          >
+            More
+          </button>
+        </article>
+
+        <article class="box-card">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+            consequatur?
+          </p>
+          <button
+            class="breakout-button"
+            type="button"
+            onclick="window.location.href = './blog/index.html';"
+          >
+            More
+          </button>
+        </article>
+      </div>
+
+      <aside class="container more-link">
+        <a href="/blog/index.html"
+          >More<ion-icon name="color-wand-outline"></ion-icon
+        ></a>
+      </aside>
     </div>
+    <!-- second row card end -->
 
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <!-- the footer and the contact form -->
     <footer>
       <section class="container bottom_border">
         <h2>Contact Me</h2>
+        <hr />
         <div class="contact">
           <article>
             <h3 class="question">Any Question?! You can reach out to me</h3>
             <p>
               <ion-icon name="location-outline"></ion-icon> <br />
-              Kirchweg <br />
-              8102 Oberengstringen <br />
-              Switzerland
+              <a
+                href="https://www.google.ch/maps/place/Kirchweg+22,+8102+Oberengstringen/@47.4050055,8.4725362,17z/data=!3m1!4b1!4m5!3m4!1s0x47900b993e7abc35:0x2ddd3ed41e85d3e9!8m2!3d47.4050055!4d8.4747249"
+                target="_blank"
+                >Kirchweg <br />
+                8102 Oberengstringen <br />
+                Switzerland</a
+              >
             </p>
             <p>
               <ion-icon name="call-outline"></ion-icon> <br />
-              +41 77 957 46 29
+              <a href="tel:+41779574629">+41 77 957 46 29</a>
             </p>
             <p>
               <ion-icon name="mail-outline"></ion-icon> <br />
-              schadi.faour@powercoders.org
+              <a href="mailto:schadi.faour@powercoders.org"
+                >schadi.faour@powercoders.org</a
+              >
             </p>
           </article>
-          <form>
+          <form id="contact">
             <label for="fname" class="form-p">First Name</label>
             <input
               type="text"
@@ -184,20 +283,26 @@
 
       <div class="container">
         <ul class="footer-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <p class="text-center">Copyright @2022 | Designed by Schadi Faour</p>
+        <p class="text-center">
+          Copyright &copy;2022 | Designed by Schadi Faour
+        </p>
 
         <ul class="social_footer_ul">
           <li>
-            <a href="#"> <ion-icon name="logo-github"></ion-icon></a>
+            <a href="#" class="icon">
+              <ion-icon name="logo-github"></ion-icon
+            ></a>
           </li>
           <li>
-            <a href="#"> <ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#" class="icon">
+              <ion-icon name="logo-linkedin"></ion-icon
+            ></a>
           </li>
         </ul>
       </div>
