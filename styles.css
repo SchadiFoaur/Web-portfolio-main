@@ -64,7 +64,7 @@ a {
 
 /* Nav Bar */
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background-color: #19142a;
   display: flex;
@@ -410,6 +410,7 @@ p {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* for the footer */
