@@ -444,17 +444,17 @@ p {
 
 /* for the footer */
 
-footer {
+.footer-home {
   padding: 25px;
   width: 100%;
   background-color: #2a2345;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
-footer h2 {
+.footer-home h2 {
   margin: 16px 0;
 }
-footer p {
+.footer-home p {
   font-size: 18px;
   color: white;
   padding-bottom: 10px;
@@ -548,4 +548,13 @@ input[type="submit"]:hover {
 .icon {
   font-size: 27px;
   color: white;
+}
+/* for the footer in pages other than the main one */
+.footer-other {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-other ul {
+  display: flex;
 }
