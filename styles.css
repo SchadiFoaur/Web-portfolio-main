@@ -355,7 +355,11 @@ p {
 .breakout-button:hover {
   background: #2a2345;
 }
-
+@media (max-width: 350px) {
+  .box-card {
+    height: 350px;
+  }
+}
 /* for the blog page  */
 .box-card-blog {
   color: #d8253b;
@@ -440,6 +444,8 @@ p {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: thin solid white;
+  border-radius: 0px 20px 0px 20px;
 }
 
 /* for the footer */
