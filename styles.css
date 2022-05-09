@@ -169,23 +169,23 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-attachment: fixed;
 }
 .home h1 {
   padding-left: 2rem;
 }
 /* extra large screens */
-/* @media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .home {
-    background-position: -200px;
+    background-position: -100px;
   }
-} */
-/* large screens */
-/* @media (max-width: 992px) {
+}
+@media (max-width: 800px) {
   .home {
-    background-color: white;
-    background-image: url(/img/schadiiiii.png);
+    background-position: -100px;
   }
-} */
+}
+
 /* @media (min-width: 768px) {
   .home {
   }
@@ -437,7 +437,7 @@ p {
 
 /* for the entries in the blog section*/
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -550,6 +550,7 @@ input[type="submit"]:hover {
   color: white;
 }
 /* for the footer in pages other than the main one */
+
 .footer-other {
   padding: 1rem;
   display: flex;
