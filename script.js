@@ -1,5 +1,4 @@
 // for the top nav bar
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -18,6 +17,7 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+// in order to check if the function is working
 // for the buttons on cards
 
 // const button = document.querySelector(".breakout-button");

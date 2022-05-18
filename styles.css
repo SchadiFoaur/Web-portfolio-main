@@ -448,6 +448,24 @@ p {
   border-radius: 0px 20px 0px 20px;
 }
 
+/* for the next and previous buttons in the entries  */
+.nex-prev {
+  display: flex;
+  justify-content: space-between;
+}
+.nex-prev button {
+  margin: 10px 0px;
+  background-color: #d8253b;
+  color: white;
+  padding: 12px 20px;
+  border: thin;
+  border-radius: 0px 20px 0px 20px;
+  cursor: pointer;
+}
+.nex-prev button:hover {
+  background-color: #2a2345;
+}
+
 /* for the footer */
 
 .footer-home {
